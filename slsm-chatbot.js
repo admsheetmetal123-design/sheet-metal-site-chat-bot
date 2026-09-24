@@ -165,67 +165,67 @@
     { id: "services",
       keywords: ["service","services","offer","do you do","what do you","help with","work"],
       answer: "We're Edmonton's HVAC experts and we handle it all:\n- Furnaces & heating\n- Air conditioning\n- Custom sheet metal & ductwork\n- Ventilation & air quality\n- Garage / shop heating\n- Basement development & legal suites\n- Water tank upgrades & tankless\n- Commercial HVAC\n- Mechanical insulation\n\nWhich one can I tell you more about?",
-      chips: [{t:"Heating",go:"heating"},{t:"Cooling",go:"cooling"},{t:"Ductwork",go:"ductwork"},{t:"Book a free consultation",act:"book"}] },
+      chips: [{t:"Heating",go:"heating"},{t:"Cooling",go:"cooling"},{t:"Ductwork",go:"ductwork"},{t:"Book a consultation",act:"book"}] },
 
     { id: "heating",
       keywords: ["heat","heating","furnace","furnaces","warm","cold","no heat"],
-      answer: "We install, replace and service furnaces and heating systems - including high-performance RUUD units built for Edmonton winters. Want a free quote or to talk to our team?",
-      chips: [{t:"Book a free consultation",act:"book"},{t:"Financing",go:"financing"},{t:"Call now",act:"call"}] },
+      answer: "We install, replace and service furnaces and heating systems - including high-performance RUUD units built for Edmonton winters. Want a quote or to talk to our team?",
+      chips: [{t:"Book a consultation",act:"book"},{t:"Financing",go:"financing"},{t:"Call now",act:"call"}] },
 
     { id: "cooling",
       keywords: ["cool","cooling","ac","a/c","air conditioning","air conditioner","conditioning","hot"],
-      answer: "We install and service central air conditioning to keep your home comfortable all summer, using high-performance RUUD systems. Want a free quote?",
-      chips: [{t:"Book a free consultation",act:"book"},{t:"Financing",go:"financing"}] },
+      answer: "We install and service central air conditioning to keep your home comfortable all summer, using high-performance RUUD systems. Want to set up a quote?",
+      chips: [{t:"Book a consultation",act:"book"},{t:"Financing",go:"financing"}] },
 
     { id: "ductwork",
       keywords: ["duct","ducting","ductwork","sheet metal","fabrication","custom metal","metal"],
       answer: "Custom sheet metal and ductwork is our specialty - it's right in our name. We design and fabricate ducting for new installs, renos, basement suites and commercial jobs, all to Alberta code. Want a quote?",
-      chips: [{t:"Book a free consultation",act:"book"},{t:"All services",go:"services"}] },
+      chips: [{t:"Book a consultation",act:"book"},{t:"All services",go:"services"}] },
 
     { id: "ventilation",
       keywords: ["ventilation","vent","air quality","hrv","fresh air","exhaust"],
       answer: "We handle ventilation and indoor air quality - HRVs, exhaust and fresh-air systems. Want us to take a look? I can set up a quote.",
-      chips: [{t:"Book a free consultation",act:"book"}] },
+      chips: [{t:"Book a consultation",act:"book"}] },
 
     { id: "water",
       keywords: ["water","tankless","tank","hot water","water heater","water tank","boiler"],
-      answer: "We do water tank upgrades and tankless (on-demand) water heater installs. Tankless gives you endless hot water and saves space. Want a free quote?",
-      chips: [{t:"Book a free consultation",act:"book"},{t:"Financing",go:"financing"}] },
+      answer: "We do water tank upgrades and tankless (on-demand) water heater installs. Tankless gives you endless hot water and saves space. Want to set up a quote?",
+      chips: [{t:"Book a consultation",act:"book"},{t:"Financing",go:"financing"}] },
 
     { id: "garage",
       keywords: ["garage","shop","workshop","heater"],
       answer: "We install garage and shop heating so your space stays warm year-round - great for workshops and hobby garages. Want a quote?",
-      chips: [{t:"Book a free consultation",act:"book"}] },
+      chips: [{t:"Book a consultation",act:"book"}] },
 
     { id: "basement",
       keywords: ["basement","suite","legal suite","development","reno","renovation"],
       answer: "We provide HVAC and ductwork for basement developments and legal suites, designed and installed to Alberta code. Want to discuss your project?",
-      chips: [{t:"Book a free consultation",act:"book"}] },
+      chips: [{t:"Book a consultation",act:"book"}] },
 
     { id: "commercial",
       keywords: ["commercial","business","office","building","store","mosque","restaurant"],
       answer: "We provide complete commercial HVAC solutions - heating, cooling, ventilation and custom ductwork for businesses across Edmonton. Want to talk to our team?",
-      chips: [{t:"Book a free consultation",act:"book"},{t:"Call now",act:"call"}] },
+      chips: [{t:"Book a consultation",act:"book"},{t:"Call now",act:"call"}] },
 
     { id: "insulation",
       keywords: ["insulation","insulate","mechanical insulation","pipe","efficiency"],
       answer: "We offer mechanical insulation for ducting and piping to improve efficiency and protect your system. Want more info or a quote?",
-      chips: [{t:"Book a free consultation",act:"book"}] },
+      chips: [{t:"Book a consultation",act:"book"}] },
 
     { id: "financing",
       keywords: ["financ","payment","pay","afford","instal","monthly","financeit","abode"],
       answer: "Yes - we offer financing so you can spread out the cost. We have RUUD System Financing and Abode Home Comfort Financing (through Financeit). Want someone to walk you through the options?",
-      chips: [{t:"Book a free consultation",act:"book"},{t:"Call now",act:"call"}] },
+      chips: [{t:"Book a consultation",act:"book"},{t:"Call now",act:"call"}] },
 
     { id: "ruud",
       keywords: ["ruud","brand","brands","equipment","reliable","warranty","guarantee"],
       answer: "We install high-performance RUUD systems - reliable, efficient and built to last through Edmonton winters, backed by solid warranties. Our promise is simple: Good, Fast & Fair. Want a quote?",
-      chips: [{t:"Book a free consultation",act:"book"},{t:"Financing",go:"financing"}] },
+      chips: [{t:"Book a consultation",act:"book"},{t:"Financing",go:"financing"}] },
 
     { id: "pricing",
       keywords: ["price","pricing","cost","quote","estimate","how much","rate","rates"],
-      answer: "Every job is different, so we give you a clear, upfront quote - no surprises, no upsells. That's part of our Good, Fast & Fair promise. The best next step is a free quote. Want me to set that up?",
-      chips: [{t:"Book a free consultation",act:"book"},{t:"Call now",act:"call"}] },
+      answer: "Every job is different, so we give you a clear, upfront quote - no surprises, no upsells. That's part of our Good, Fast & Fair promise. The best next step is booking a consultation. Want me to set that up?",
+      chips: [{t:"Book a consultation",act:"book"},{t:"Call now",act:"call"}] },
 
     { id: "hours",
       keywords: ["hour","hours","open","close","closed","when","time","weekend"],
@@ -244,19 +244,19 @@
 
     { id: "promotions",
       keywords: ["promotion","promo","deal","deals","discount","sale","special","offer","newsletter","subscribe","updates","mailing","email list","sign up","signup","join"],
-      answer: "We run seasonal promotions on furnaces, A/C and more. Want me to add you to our list? You'll get our latest deals and HVAC tips by email - no spam, unsubscribe anytime.",
-      chips: [{t:"Yes, sign me up",act:"signup"},{t:"Book a free consultation",act:"book"}] },
+      answer: "We send out promos and deals on furnaces, A/C and more. Want me to add you to our list so you won't miss out? No spam, and you can unsubscribe anytime.",
+      chips: [{t:"Yes, sign me up",act:"signup"},{t:"Book a consultation",act:"book"}] },
 
     { id: "about",
       keywords: ["about","who","scott","trust","review","reviews","experience","team"],
       answer: "SL Sheet Metal LTD is a trusted local Edmonton HVAC company led by Scott and his crew, serving homes and businesses with heating, cooling and custom ductwork. Our promise: Good, Fast & Fair. How can we help?",
-      chips: [{t:"Our services",go:"services"},{t:"Book a free consultation",act:"book"}] }
+      chips: [{t:"Our services",go:"services"},{t:"Book a consultation",act:"book"}] }
   ];
 
   // Greeting + the quick-start buttons shown first.
-  var GREETING = "Hi there! I'm the SL Sheet Metal assistant. I can answer questions about our HVAC services, help you book a free consultation, or add you to our promotions list. What can I help you with?";
+  var GREETING = "Hi there! I'm the SL Sheet Metal assistant. I can answer questions about our HVAC services, help you book a consultation, or add you to our promotions list. What can I help you with?";
   var QUICKSTART = [
-    {t:"Book a free consultation", act:"book"},
+    {t:"Book a consultation", act:"book"},
     {t:"Our services", go:"services"},
     {t:"Financing options", go:"financing"},
     {t:"Get promotions & updates", act:"signup"},
@@ -354,7 +354,7 @@
   function doBook(){
     window.open(CONFIG.bookUrl, "_blank");
     botTyping(function(){
-      botSay("I've opened our free consultation form in a new tab - add your details there and our team will be in touch shortly. (If it didn't open, tap below.) Anything else I can help with?",
+      botSay("I've opened our consultation form in a new tab - add your details there and our team will be in touch shortly. (If it didn't open, tap below.) Anything else I can help with?",
         [{t:"Open booking form",act:"booklink"},{t:"Get promotions & updates",act:"signup"},{t:"Call now",act:"call"}]);
     });
   }
@@ -362,7 +362,7 @@
   // ---- Email signup: adds the visitor to your MailerLite "Website Chatbot Leads" group ----
   function startSignup(){
     lead = { step: "email", name:"", email:"" };
-    botTyping(function(){ botSay("Love it! We'll send occasional promotions and HVAC tips. What's the best email to use?"); });
+    botTyping(function(){ botSay("Love it! We'll send you our promos and deals. What's the best email to use?"); });
   }
 
   function handleLead(text){
@@ -376,11 +376,19 @@
       lead.step = "submitting";
       return botTyping(function(){
         botSay("Adding you now...");
-        mlSubscribe({ email: lead.email, name: lead.name, message: "Promotions/updates signup (via website chat)" }, function(){
+        mlSubscribe({ email: lead.email, name: lead.name, message: "Promotions/updates signup (via website chat)" }, function(ok){
           var nm = firstName(lead.name);
+          if(!ok){
+            botTyping(function(){
+              botSay("Sorry, I couldn't confirm that went through. Please try again later, or call us at " + CONFIG.phone + " and we'll add you.",
+                [{t:"Call now",act:"call"},{t:"Our services",go:"services"}]);
+            });
+            lead = null;
+            return;
+          }
           botTyping(function(){
-            botSay("You're on the list" + (nm ? ", " + nm : "") + "! Watch your inbox - you may get a quick note to confirm your subscription. Ready to book? I can open our free consultation form anytime.",
-              [{t:"Book a free consultation",act:"book"},{t:"Our services",go:"services"},{t:"Call now",act:"call"}]);
+            botSay("You're on the list" + (nm ? ", " + nm : "") + "! Watch your inbox, you may get a quick note to confirm your subscription. Ready to book? I can open our consultation form anytime.",
+              [{t:"Book a consultation",act:"book"},{t:"Our services",go:"services"},{t:"Call now",act:"call"}]);
           });
           lead = null;
         });
@@ -396,7 +404,7 @@
     var finished = false;
     var s = document.createElement("script");
     function cleanup(){ if(finished) return; finished = true; try{ delete window[cb]; }catch(e){ window[cb]=null; } if(s.parentNode) s.parentNode.removeChild(s); }
-    window[cb] = function(){ cleanup(); onDone(true); };
+    window[cb] = function(r){ cleanup(); onDone(!(r && r.success === false)); };
     var p = [
       "fields[email]="  + encodeURIComponent(d.email),
       "fields[name]="   + encodeURIComponent(d.name || ""),
@@ -405,9 +413,9 @@
       "ml-submit=1", "ajax=1", "callback=" + cb
     ];
     s.src = "https://assets.mailerlite.com/jsonp/" + CONFIG.mlAccount + "/forms/" + CONFIG.mlForm + "/subscribe?" + p.join("&");
-    s.onerror = function(){ cleanup(); onDone(true); };           // assume sent
+    s.onerror = function(){ cleanup(); onDone(false); };          // request failed
     document.body.appendChild(s);
-    setTimeout(function(){ if(!finished){ cleanup(); onDone(true); } }, 6000);  // optimistic fallback
+    setTimeout(function(){ if(!finished){ cleanup(); onDone(false); } }, 8000);  // no confirmation = not confirmed
   }
 
   function handleSend(){
@@ -424,8 +432,8 @@
 
     // fallback
     botTyping(function(){
-      botSay("I want to make sure you get the right answer. I can help with heating, cooling, ductwork, financing, hours, or setting up a free quote - or you can call us directly at " + CONFIG.phone + ".",
-        [{t:"Book a free consultation",act:"book"},{t:"Our services",go:"services"},{t:"Call now",act:"call"}]);
+      botSay("I want to make sure you get the right answer. I can help with heating, cooling, ductwork, financing, hours, or setting up a quote - or you can call us directly at " + CONFIG.phone + ".",
+        [{t:"Book a consultation",act:"book"},{t:"Our services",go:"services"},{t:"Call now",act:"call"}]);
     });
   }
 
