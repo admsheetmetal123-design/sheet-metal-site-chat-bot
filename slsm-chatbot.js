@@ -387,7 +387,7 @@
             return;
           }
           botTyping(function(){
-            botSay("You're on the list" + (nm ? ", " + nm : "") + "! Watch your inbox, you may get a quick note to confirm your subscription. Ready to book? I can open our consultation form anytime.",
+            botSay("Almost done" + (nm ? ", " + nm : "") + "! We just sent you an email. Tap the button in it to confirm and you're on the list. (Check your junk folder if you don't see it.) Ready to book? I can open our consultation form anytime.",
               [{t:"Book a consultation",act:"book"},{t:"Our services",go:"services"},{t:"Call now",act:"call"}]);
           });
           lead = null;
@@ -398,24 +398,26 @@
 
   function firstName(n){ return (n||"").trim().split(/\s+/)[0] || ""; }
 
-  // Send the email signup to MailerLite via its public form endpoint (JSONP - no CORS issues).
+  // Send the email signup to MailerLite's public form endpoint.
+  // MailerLite replies with plain JSON (not a JSONP callback), so we send it with fetch.
+  // The reply can't be read cross-site, so "ok" means the request reached MailerLite;
+  // with double opt-in on, the confirmation email is the real proof of signup.
   function mlSubscribe(d, onDone){
-    var cb = "slsmcb_" + Date.now() + Math.floor(Math.random()*1000);
-    var finished = false;
-    var s = document.createElement("script");
-    function cleanup(){ if(finished) return; finished = true; try{ delete window[cb]; }catch(e){ window[cb]=null; } if(s.parentNode) s.parentNode.removeChild(s); }
-    window[cb] = function(r){ cleanup(); onDone(!(r && r.success === false)); };
+    var done = false;
+    function finish(ok){ if(done) return; done = true; onDone(ok); }
     var p = [
       "fields[email]="  + encodeURIComponent(d.email),
       "fields[name]="   + encodeURIComponent(d.name || ""),
       "fields[phone]="  + encodeURIComponent(d.phone || ""),
       "fields[chatbot_message]=" + encodeURIComponent(d.message || ""),
-      "ml-submit=1", "ajax=1", "callback=" + cb
+      "ml-submit=1", "ajax=1"
     ];
-    s.src = "https://assets.mailerlite.com/jsonp/" + CONFIG.mlAccount + "/forms/" + CONFIG.mlForm + "/subscribe?" + p.join("&");
-    s.onerror = function(){ cleanup(); onDone(false); };          // request failed
-    document.body.appendChild(s);
-    setTimeout(function(){ if(!finished){ cleanup(); onDone(false); } }, 8000);  // no confirmation = not confirmed
+    var url = "https://assets.mailerlite.com/jsonp/" + CONFIG.mlAccount + "/forms/" + CONFIG.mlForm + "/subscribe?" + p.join("&");
+    setTimeout(function(){ finish(false); }, 10000);   // no answer in 10s = not confirmed
+    try {
+      fetch(url, { method: "GET", mode: "no-cors", cache: "no-store" })
+        .then(function(){ finish(true); }, function(){ finish(false); });
+    } catch(e){ finish(false); }
   }
 
   function handleSend(){
